@@ -6,8 +6,8 @@
 ```mermaid
 graph TD;
     GAN_training -- Latent_space_interploation --> Time-series_gene_expression_profile;
-    Time-series_gene_expression_profile -- A --> GAN-WGCNA;
-    Time-series_gene_expression_profile -- A --> rescued_DEG;
+    Time-series_gene_expression_profile -- GAN-WGCNA --> Spatiotemporal_gene_modules;
+    Time-series_gene_expression_profile -- rescued_DEG --> Intermediate_DEG;
 
 ```
 ## Reference
