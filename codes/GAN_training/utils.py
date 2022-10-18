@@ -30,9 +30,9 @@ noise_input_size = 100
 def load_epidermal(dataset_name, gex_size):
     # dataset_name = dataset_name
 
-    data_dir = os.path.join("data", dataset_name)
+    data_dir = os.path.join("../../data", dataset_name)
     print(data_dir)
-    set_name = "%s-DEG_aug_train.csv" % dataset_name
+    set_name = "%s_train.csv" % dataset_name
     path = os.path.join(data_dir, set_name)
     input_ltpm_matrix = genfromtxt(path, delimiter=',', skip_header=1)
     scaler = MinMaxScaler()
