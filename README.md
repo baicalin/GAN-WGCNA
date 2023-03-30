@@ -26,7 +26,7 @@ conda create -n tensorflow python=3.7
 activate tensorflow
 pip install tensorflow==1.15.0
 ```
-- `git-lfs` has been used for managing large files [install](https://github.com/git-lfs/git-lfs/wiki/Installation) 
+- `git-lfs` has been used for managing large files  [installation guid](https://github.com/git-lfs/git-lfs/wiki/Installation) 
 ```bash
 # To download file
 git lfs pull
