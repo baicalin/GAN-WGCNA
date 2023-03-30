@@ -17,9 +17,9 @@ graph TD;
 
 ## Environments
 Analytic scripts are written in python(jupyter notebook) and R. Therefore, installation of interpreter for each language is required. Here is some installation guid
-- Python (Jupyter notebook): https://jupyter.org/install and https://docs.anaconda.com/anaconda/install/index.html
-- R (RStudio): https://posit.co/products/open-source/rstudio/
-- Tensorflow (version 1.15): We need tensorflow 1.15. Easiest way to installing tensorflow 1.xx is using anaconda distribution
+- `Python (Jupyter notebook)`: https://jupyter.org/install and https://docs.anaconda.com/anaconda/install/index.html
+- `R (RStudio)`: https://posit.co/products/open-source/rstudio/
+- `Tensorflow (version 1.15)`: We need tensorflow 1.15. Easiest way to installing tensorflow 1.xx is using anaconda distribution
 ```bash
 python -m pip install --upgrade pip
 conda create -n tensorflow python=3.7
