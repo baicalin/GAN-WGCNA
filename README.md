@@ -16,7 +16,7 @@ graph TD;
 ```
 
 ## Environments
-Analyitic scripts are written in python(jupyter notebook) and R. Therefore, installation of interpreter for each language is need. Here is some installation guid
+Analytic scripts are written in python(jupyter notebook) and R. Therefore, installation of interpreter for each language is need. Here is some installation guid
 - Python (Jupyter notebook): https://jupyter.org/install and https://docs.anaconda.com/anaconda/install/index.html
 - R (RStudio): https://posit.co/products/open-source/rstudio/
 - Tensorflow (version 1.15): We need tensorflow 1.15. Easiest way to installing tensorflow 1.xx is using anaconda distribution
