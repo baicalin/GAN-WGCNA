@@ -20,7 +20,7 @@ def parse_args():
     parser.add_argument('--gan_type', type=str, default='WGAN_GP',
                         choices=['GAN', 'CGAN', 'infoGAN', 'ACGAN', 'EBGAN', 'BEGAN', 'WGAN', 'WGAN_GP', 'DRAGAN', 'LSGAN', 'VAE', 'CVAE'],
                         help='The type of GAN') # required=True)
-    parser.add_argument('--dataset', type=str, default='BLA_10k', choices=['PFC', 'CPU', 'HIP', 'NAC', 'VTA'],
+    parser.add_argument('--dataset', type=str, default='BLA', choices=['PFC', 'CPU', 'HIP', 'NAC', 'VTA'],
                         help='The name of dataset')
     parser.add_argument('--epoch', type=int, default=50001, help='The number of epochs to run')
     # Confusing, in the body of paper, author said batch_size was 32. but in supplementary, Its 30
