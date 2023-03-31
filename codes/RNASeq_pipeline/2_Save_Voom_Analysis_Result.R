@@ -1,3 +1,10 @@
+if(0)"
+if (!require('BiocManager', quietly = TRUE))
+    install.packages('BiocManager')
+
+BiocManager::install('edgeR')
+"
+
 library(edgeR)
 library(biomaRt)
 DATASETS_PATH = "./Datasets" # paste("Datasets-",format(Sys.time(), "%Y%m%d/"), sep="")
