@@ -54,6 +54,7 @@ python 2_main.py --dataset BLA --gex_size 13557
 ## Latent_space_interploation
 `Perturbation_simulation.ipynb` creates time-series profiles using training results in `GAN_training` (`checkpoints` are generated after training)
 - `Perturbation_simulation.ipynb` creates `{region}_profile.npy` from specific epoch and datapoint, average it desired scale for further analysis and place it into `GAN-WGCNA/Dataset/{region}_sample_averaged_profile.csv`
+- Because of storage limit, `checkpint` which is trained generator is not available on this repository. but it can be generated from `2_main.py`
 
 ## GAN-WGCNA
 GAN-WGCNA has `script.R` and `Figures.ipynb`
