@@ -26,7 +26,7 @@ conda create -n tensorflow python=3.7
 activate tensorflow
 pip install tensorflow==1.15.0
 ```
-- `git-lfs` has been used for managing large files  [installation guid](https://github.com/git-lfs/git-lfs/wiki/Installation) 
+- `git-lfs` has been used for managing large files  [installation guid](https://github.com/git-lfs/git-lfs/wiki/Installation)
 ```bash
 # To download file
 git lfs pull
@@ -48,7 +48,7 @@ GAN_training contains several scripts but executing `2_main.py` is enough for tr
 # previous generated environment
 activate tensorflow
 # change dataset and gexsize for each region training
-python 2_main.py --dataset BLA --gexsize 13557
+python 2_main.py --dataset BLA --gex_size 13557
 ```
 
 ## Latent_space_interploation
@@ -56,14 +56,14 @@ python 2_main.py --dataset BLA --gexsize 13557
 - `Perturbation_simulation.ipynb` creates `{region}_profile.npy` from specific epoch and datapoint, average it desired scale for further analysis and place it into `GAN-WGCNA/Dataset/{region}_sample_averaged_profile.csv`
 
 ## GAN-WGCNA
-GAN-WGCNA has `script.R` and `Figures.ipynb` 
-- `script.R` creates Results 
+GAN-WGCNA has `script.R` and `Figures.ipynb`
+- `script.R` creates Results
 - `Figures.ipynb` draws figures based on Results
 - `{group}_module` are manually downloaded Gene Ontology results from [Webgestalt](https://www.webgestalt.org/)
 
 ## rDEG
-rDEG has `script.R` and `Figures.ipynb` 
-- `script.R` creates Results 
+rDEG has `script.R` and `Figures.ipynb`
+- `script.R` creates Results
 - `Figures.ipynb` draws figures based on Results
 - Because of storage limit, `{DATE}_{REGION}_{EPOCH}_epoch_profile_full_concated.npy` are not available on this repository. but it can be generated from `Perturbation_simulation.ipynb`
 
