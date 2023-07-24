@@ -49,6 +49,12 @@ GAN_training contains several scripts but executing `2_main.py` is enough for tr
 activate tensorflow
 # change dataset and gexsize for each region training
 python 2_main.py --dataset BLA --gex_size 13557
+# gex_size for each region
+# VTA: 13317
+# CPU: 13022
+# HIP: 13176
+# PFC: 13092
+# NAC: 13232
 ```
 
 ## Latent_space_interploation
