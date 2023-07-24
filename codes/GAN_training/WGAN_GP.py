@@ -26,7 +26,7 @@ class WGAN_GP(object):
         self.gex_size = gex_size
         self.disc_internal_size = disc_internal_size
 
-        if dataset_name in ['BLA_10k', 'CPU_10k', 'VTA_10k', 'HIP_10k', 'PFC_10k', 'NAC_10k' ]:
+        if dataset_name in ['BLA', 'CPU', 'VTA', 'HIP', 'PFC', 'NAC' ]:
 
             self.z_dim = z_dim         # dimension of noise-vector
             self.lambd = 10       # The higher value, the more stable, but the slower convergence
@@ -59,7 +59,7 @@ class WGAN_GP(object):
                 # kernel_initializer=tf.random_uniform_initializer(minval=-0.05,maxval=0.05,seed=564),
                 activation=None,
                 name="disc_dense1")
-            
+
             disc_dense1 = lrelu(disc_dense1)
             disc_dense2 = tf.layers.dense(inputs=disc_dense1,
                 units=self.disc_internal_size,
@@ -167,7 +167,7 @@ class WGAN_GP(object):
         '''
 
 
-        # 9_GAN_supercom에서 복원됨 
+        # 9_GAN_supercom에서 복원됨
         with tf.control_dependencies(tf.get_collection(tf.GraphKeys.UPDATE_OPS)):
             self.d_optim = tf.train.RMSPropOptimizer(self.learning_rate,
                                                     decay=0.9,
