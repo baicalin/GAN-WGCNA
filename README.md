@@ -63,7 +63,7 @@ GAN-WGCNA has `script.R` and `Figures.ipynb`
 - `{group}_module` are manually downloaded Gene Ontology results from [Webgestalt](https://www.webgestalt.org/)
 
 ```r
-
+sessionInfo() 
 R version 4.2.0 (2022-04-22 ucrt)
 Platform: x86_64-w64-mingw32/x64 (64-bit)
 Running under: Windows 10 x64 (build 19045)
