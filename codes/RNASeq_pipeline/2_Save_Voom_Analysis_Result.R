@@ -7,6 +7,7 @@ BiocManager::install('edgeR')
 
 install.packages('BiocManager')
 BiocManager::install('edgeR')
+BiocManager::install('biomaRt')
 
 library(edgeR)
 library(biomaRt)
