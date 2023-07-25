@@ -5,6 +5,9 @@ if (!require('BiocManager', quietly = TRUE))
 BiocManager::install('edgeR')
 "
 
+install.packages('BiocManager')
+BiocManager::install('edgeR')
+
 library(edgeR)
 library(biomaRt)
 DATASETS_PATH = "Datasets/" # paste("Datasets-",format(Sys.time(), "%Y%m%d/"), sep="")
@@ -14,7 +17,7 @@ dir.create(RESULT_PATH)
 for( region in c("VTA","CPU","PFC","HIP","NAC","BLA") ){
     # region = "VTA"
     counts <- read.csv( paste(DATASETS_PATH, region, "_Count_Dataset.csv", sep="") , header = TRUE, row.names = 1)
-    geneLengths <- read.csv("Datasets/neLengths.csv",header = TRUE)
+    geneLengths <- read.csv("Datasets/geneLengths.csv",header = TRUE)
 
     total_mapped = colSums(counts)
     RPKM_counts = rpkm(counts, geneLengths$length, lib.size=total_mapped) # Get RPKM
